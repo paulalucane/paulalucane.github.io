@@ -1,0 +1,130 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e3e6e0;
+}
+
+/*HEADER*/
+.navbar {
+  /* background-color: #d9c2d3; */
+  background-color: #414d55;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  /* justify-content: flex-end; */
+}
+.navbar-brand {
+  padding-top: 10px;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+/*FOOTER*/
+footer {
+  background-color: #414d55;
+}
+
+/* HOME PAGE */
+.homepage-portrait-img {
+  width: 400px;
+}
+
+/* PROJECTS */
+.project-group-h {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.project-title {
+  font-size: 1rem;
+}
+.proj-section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.proj-section-heading {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+/* .cmbyn-preview-img {
+  padding-left: 5%;
+  padding-right: 5%;
+} */
+#proj-logo-loveandcr,
+#proj-logo-paulalucane {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#proj-logo-paulalucane,
+#proj-logo-thebeatles {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/*project pages*/
+.project-title-page-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.proj-desc {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.proj-desc-createdwith {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+/*coffeetable book and title layout*/
+.coffebook-layout1,
+.title-layout1 {
+  padding-left: 30vw;
+  margin-top: 1rem;
+}
+.coffebook-layout2,
+.title-layout2 {
+  padding-right: 30vw;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.love-and-cr-img,
+.ai-img {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10px;
+}
+.ai-cover-img {
+  max-width: 50%;
+  padding-top: 10px;
+}
+.last-proj-img {
+  /*to add padding between last image and footer in individual project pages*/
+  margin-bottom: 2rem;
+}
+/*pastiche*/
+/* .pastiche-section-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto, auto;
+  grid-template-areas:
+    "nelly me"
+    "pastiche pastiche";
+}
+#pastiche-nelly-div {
+  grid-area: nelly;
+}
+#pastiche-me-img {
+  grid-area: me;
+}
+#pastiche-final-img {
+  grid-area: pastiche;
+} */
+.pastiche-section-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+}

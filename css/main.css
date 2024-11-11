@@ -90,7 +90,10 @@ footer {
 }
 .love-and-cr-img,
 .ai-img,
-.change-of-heart-img {
+.change-of-heart-img,
+.light-shadow-stamps,
+.organizing-group,
+.pastiche {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 10px;
@@ -103,29 +106,12 @@ footer {
   /*to add padding between last image and footer in individual project pages*/
   margin-bottom: 2rem;
 }
-/*pastiche*/
-/* .pastiche-section-container {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: auto, auto;
-  grid-template-areas:
-    "nelly me"
-    "pastiche pastiche";
+.cmbyn-sticker-sheet {
+  padding-left: 20vw;
 }
-#pastiche-nelly-div {
-  grid-area: nelly;
-}
-#pastiche-me-img {
-  grid-area: me;
-}
-#pastiche-final-img {
-  grid-area: pastiche;
-} */
-.pastiche-section-container {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  display: flex;
-  flex-wrap: wrap;
+
+.organizing-elements,
+.collage {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }

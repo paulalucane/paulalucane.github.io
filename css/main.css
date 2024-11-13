@@ -93,7 +93,8 @@ footer {
 .change-of-heart-img,
 .light-shadow-stamps,
 .organizing-group,
-.pastiche {
+.pastiche,
+.reflection-group {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 10px;
@@ -103,15 +104,31 @@ footer {
   padding-top: 10px;
 }
 .last-proj-img {
-  /*to add padding between last image and footer in individual project pages*/
+  /*to add space between last image and footer in individual project pages*/
   margin-bottom: 2rem;
+}
+#last-proj-section {
+  /*to add space between last project section and footer in project page*/
+  margin-bottom: 5rem;
 }
 .cmbyn-sticker-sheet {
   padding-left: 20vw;
 }
 
 .organizing-elements,
-.collage {
+.collage,
+.culture-day {
   padding-left: 20vw;
   padding-right: 20vw;
+}
+.pottery-class,
+.halloween-movienight,
+.me-as-an-artist {
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+/*logos*/
+#beatles-logo-section {
+  padding-left: 10vw;
+  padding-right: 10vw;
 }

@@ -58,8 +58,9 @@ footer {
 }
 #proj-logo-paulalucane,
 #proj-logo-thebeatles {
-  padding-left: 3%;
-  padding-right: 3%;
+  /* padding-left: 3%;
+  padding-right: 3%; */
+  padding: 2%;
 }
 
 /*project pages*/
@@ -128,7 +129,21 @@ footer {
   padding-right: 25vw;
 }
 /*logos*/
-#beatles-logo-section {
+#logo-section {
+  /*logo section for the beatles and lilly bloom's*/
   padding-left: 10vw;
   padding-right: 10vw;
+}
+/* #thebeatles-logo-redblue {
+  padding: 8px;
+  margin-bottom: 7px;
+} */
+.lillyblooms-logo {
+  padding: 10px;
+}
+#lillyblooms-logo-text {
+  padding: 40px;
+}
+.extra-space-div {
+  height: 50px;
 }

@@ -95,7 +95,8 @@ footer {
 .light-shadow-stamps,
 .organizing-group,
 .pastiche,
-.reflection-group {
+.reflection-group,
+#mindlog-site-map {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 10px;
@@ -129,7 +130,7 @@ footer {
   padding-right: 25vw;
 }
 /*logos*/
-#logo-section {
+.logo-section {
   /*logo section for the beatles and lilly bloom's*/
   padding-left: 10vw;
   padding-right: 10vw;

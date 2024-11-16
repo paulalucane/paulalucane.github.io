@@ -48,6 +48,11 @@ footer {
   gap: 2rem;
 }
 #homepage-portrait-img {
+  padding: 30px;
+  max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
+  grid-area: image;
+}
+#homepage-illustration-img {
   max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
   grid-area: image;
 }

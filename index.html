@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Paula Lucane portfolio</title>
     <!-- link bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- link Roca font family -->
+    <link rel="stylesheet" href="https://use.typekit.net/skg2xns.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -26,7 +28,7 @@
         <!-- logo -->
         <a class="navbar-brand" href="#"
           ><object
-            data="img/navbar-logo-purple.svg"
+            data="img/navbar-logo-light.svg"
             type="image/svg+xml"
             height="20"
           ></object
@@ -37,10 +39,10 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Graphic Design</a>
+            <a class="nav-link" href="projects.html">GRAPHIC DESIGN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="webdev.html">Web Development</a>
+            <a class="nav-link" href="webdev.html">WEB DEVELOPMENT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -50,19 +52,20 @@
     </header>
     <!-- pt-4 is a bootstrap class that adds top padding -->
     <main class="container pt-4 flex-grow-1">
-      <p>this is just an example text to see if everything works</p>
-      <div class="row">
+      <div class="homepage-grid-div">
         <img
-          class="homepage-portrait-img"
-          class="col"
+          id="homepage-portrait-img"
           src="img/me-cropped.png"
           alt="portrait picture"
         />
-        <p class="col">
-          Hi, there! My name is Paula and I am second year Graphic Design and
-          Web Development studen at Jonkoping University, Sweden, and I am
-          looking for an internship as a part of my study program.
-        </p>
+        <div id="homepage-text-div">
+          <p id="homepage-greeting">Hi, there!</p>
+          <p id="homepage-paragraph">
+            My name is Paula and I am second year Graphic Design and Web
+            Development studen at Jönköping University, Sweden. Welcome to my
+            portfolio!
+          </p>
+        </div>
       </div>
     </main>
     <footer class="text-center pt-5 mt-auto">

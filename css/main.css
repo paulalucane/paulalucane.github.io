@@ -25,8 +25,32 @@ footer {
 }
 
 /* HOME PAGE */
-.homepage-portrait-img {
-  width: 400px;
+.homepage-grid-div {
+  display: grid;
+  align-items: center; /*aligns vertically*/
+  justify-content: center; /*aligns horizontally, like MS Word*/
+  margin-top: 5rem;
+  grid-template-areas:
+    "image text"
+    "contacts contacts";
+  grid-template-columns: minmax(200px, 400px) minmax(200px, 400px); /* Equal width columns */
+  gap: 2rem;
+}
+#homepage-portrait-img {
+  max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
+  grid-area: image;
+}
+#homepage-text-div {
+  grid-area: text;
+}
+#homepage-greeting {
+  font-size: 1.5rem;
+  /* color: #978b75; */ /*light brown*/
+  /* color: #93460b; */ /*dark orange*/
+  color: #d48428;
+  font-family: "roca", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* PROJECTS */

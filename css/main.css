@@ -54,7 +54,8 @@ footer {
 .homepage-text-div {
   grid-area: text;
 }
-#homepage-greeting {
+#homepage-greeting,
+#aboutpage-greeting {
   font-size: 1.5rem;
   /* color: #978b75; */ /*light brown*/
   /* color: #93460b; */ /*dark orange*/

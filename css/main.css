@@ -51,10 +51,12 @@ footer {
   padding: 30px;
   max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
   grid-area: image;
+  z-index: 1;
 }
 #homepage-illustration-img {
   max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
   grid-area: image;
+  z-index: 2;
 }
 .homepage-text-div {
   grid-area: text;

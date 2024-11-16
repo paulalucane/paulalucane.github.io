@@ -24,30 +24,40 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <!-- logo -->
-        <a class="navbar-brand" href="#"
-          ><object
+        <a class="navbar-brand nested-svg-a" href="index.html">
+          <object
+            class="clickable-svg"
             data="img/navbar-logo-light.svg"
             type="image/svg+xml"
             height="25"
-          ></object
-        ></a>
+          ></object>
+        </a>
+        <!-- button for collapsible navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        ></button>
         <!-- navigation -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">GRAPHIC DESIGN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="webdev.html">WEB DEVELOPMENT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">GRAPHIC DESIGN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webdev.html">WEB DEVELOPMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- pt-4 is a bootstrap class that adds top padding -->
@@ -55,17 +65,50 @@
       <div class="homepage-grid-div">
         <img
           id="homepage-portrait-img"
-          src="img/me-cropped.png"
+          src="img/me-cropped-straight.png"
           alt="portrait picture"
         />
-        <div id="homepage-text-div">
+        <div class="homepage-text-div">
           <p id="homepage-greeting">Hi, there!</p>
           <p id="homepage-paragraph">
             My name is Paula and I am second year Graphic Design and Web
             Development studen at Jönköping University, Sweden. Welcome to my
             portfolio!
           </p>
+          <div class="homepage-contacts-div">
+            <a
+              class="nested-svg-a"
+              href="https://www.linkedin.com/in/paula-luc%C4%81ne-5b3207324/"
+              target="_blank"
+            >
+              <object
+                class="clickable-svg"
+                data="img/logo/linkedin-black.svg"
+                type="image/svg+xml"
+                width="30"
+              ></object
+            ></a>
+            <p>paula.lucane@gmail.com</p>
+          </div>
         </div>
+        <!-- contacts that are only displayed on midle sized screens -->
+        <div class="homepage-contacts-div-small-screens">
+          <a
+            class="nested-svg-a"
+            id="md-screen-linkedin"
+            href="https://www.linkedin.com/in/paula-luc%C4%81ne-5b3207324/"
+            target="_blank"
+          >
+            <object
+              class="clickable-svg"
+              data="img/logo/linkedin-black.svg"
+              type="image/svg+xml"
+              width="30"
+            ></object
+          ></a>
+          <p id="md-screen-email">paula.lucane@gmail.com</p>
+        </div>
+        <!-- end -->
       </div>
     </main>
     <footer class="text-center pt-5 mt-auto">

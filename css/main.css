@@ -19,6 +19,19 @@ body {
 .navbar-nav {
   margin-left: auto;
 }
+.navbar-toggler {
+  /*collapse navbar button*/
+  border-color: #d48428;
+  border-color: #e3e6e0;
+  border-width: 2px;
+}
+/*for logo and linkedin icon*/
+.clickable-svg {
+  pointer-events: none; /* This ensures clicks pass through the <object> tag */
+}
+.nested-svg-a {
+  display: inline-block; /* Ensure the <a> tag wraps correctly around the object */
+}
 /*FOOTER*/
 footer {
   background-color: #414d55;
@@ -27,12 +40,10 @@ footer {
 /* HOME PAGE */
 .homepage-grid-div {
   display: grid;
-  align-items: center; /*aligns vertically*/
+  align-items: end; /*aligns vertically */
   justify-content: center; /*aligns horizontally, like MS Word*/
   margin-top: 5rem;
-  grid-template-areas:
-    "image text"
-    "contacts contacts";
+  grid-template-areas: "image text" "contacts contacts";
   grid-template-columns: minmax(200px, 400px) minmax(200px, 400px); /* Equal width columns */
   gap: 2rem;
 }
@@ -40,7 +51,7 @@ footer {
   max-width: 100%; /*100% of the parent element (.homepage-grid-div image grid-template-area that is set to minmax(200px-400px))*/
   grid-area: image;
 }
-#homepage-text-div {
+.homepage-text-div {
   grid-area: text;
 }
 #homepage-greeting {
@@ -51,6 +62,40 @@ footer {
   font-family: "roca", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.homepage-contacts-div {
+  /* grid-area: contacts; */
+  /* display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  gap: 10px; */
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.homepage-contacts-div-small-screens {
+  /*this is the same content as .homepage-contacts-div, but outside the text-div*/
+  /*this is hidden on big screen but shows up on a small screen for media query 768px*/
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .homepage-contacts-div {
+    display: none;
+  }
+  .homepage-contacts-div-small-screens {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    grid-area: contacts;
+    margin-top: 5rem;
+  }
+  #md-screen-linkedin,
+  #md-screen-email {
+    /*centers these*/
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* PROJECTS */

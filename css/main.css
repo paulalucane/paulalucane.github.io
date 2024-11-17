@@ -112,6 +112,18 @@ footer {
 }
 #aboutpage-contact-div {
   grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+}
+.aboutpage-link-group {
+  display: flex;
+  gap: 5px;
+}
+.aboutpage-link-group a {
+  color: #d48428;
+}
+.aboutpage-link-group a:hover {
+  color: #93460b;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,7 +133,8 @@ footer {
   }
   /*aboutpage*/
   .aboutpage-text-div p,
-  #aboutpage-contact-div p {
+  #aboutpage-contact-div p,
+  .aboutpage-link-group a {
     /*target a <p> tag inside a <div> with a class="aboutpage-text-div" and p in #aboutpage-contact-div*/
     font-size: 0.9rem;
   }

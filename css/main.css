@@ -319,3 +319,27 @@ footer {
 .extra-space-div {
   height: 50px;
 }
+
+/*ANIMATION FOR ILLUSTRATIONS*/
+#homepage-illustration-img {
+  animation: pulsate 2s infinite; /* 2s = duration of the cycle, infinite = repeat forever */
+  animation-delay: 1s; /* Start pulsing after a 1-second delay*/
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Normal size */
+    opacity: 1; /* Fully visible */
+  }
+  30% {
+    transform: scale(1.05); /* Slightly larger */
+    opacity: 0.7; /* Slightly faded */
+  }
+  60% {
+    transform: scale(1); /* Back to normal size */
+    opacity: 1; /* Fully visible again */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+    opacity: 1; /* Fully visible again */
+  }
+}

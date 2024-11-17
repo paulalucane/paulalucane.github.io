@@ -343,3 +343,35 @@ footer {
     opacity: 1; /* Fully visible again */
   }
 }
+
+/*scroll animation*/
+p,
+h1,
+h2,
+.webdev-a {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 30%;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  animation: fade-img linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
+@keyframes fade-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -72,13 +72,6 @@ footer {
   font-style: normal;
 }
 .homepage-contacts-div {
-  /* grid-area: contacts; */
-  /* display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  gap: 10px; */
   margin-top: 15%;
   margin-bottom: 5%;
 }
@@ -87,7 +80,32 @@ footer {
   /*this is hidden on big screen but shows up on a small screen for media query 768px*/
   display: none;
 }
+
+/* ABOUT PAGE */
+#aboutpage-grid-div {
+  display: grid;
+  align-items: start; /*aligns vertically */
+  justify-content: center; /*aligns horizontally, like MS Word*/
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  grid-template-areas: "image text" "contacts text";
+  grid-template-columns: minmax(200px, 400px) minmax(60%, auto);
+  grid-template-rows: min-content 1fr;
+  gap: 2rem;
+}
+#aboutpage-portrait-img {
+  grid-area: image;
+  width: 100%;
+}
+.aboutpage-text-div {
+  grid-area: text;
+}
+#aboutpage-contact-div {
+  grid-area: contacts;
+}
+
 @media screen and (max-width: 768px) {
+  /*homepage*/
   .homepage-contacts-div {
     display: none;
   }
@@ -103,6 +121,43 @@ footer {
     /*centers these*/
     margin-left: auto;
     margin-right: auto;
+  }
+  /*aboutpage*/
+  .aboutpage-text-div p,
+  #aboutpage-contact-div p {
+    /*target a <p> tag inside a <div> with a class="aboutpage-text-div" and p in #aboutpage-contact-div*/
+    font-size: 0.9rem;
+  }
+  #aboutpage-greeting {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .homepage-grid-div {
+    display: grid;
+    /*align-items: end; /*aligns vertically */
+    /*justify-content: center; /*aligns horizontally, like MS Word*/
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    grid-template-areas: "image" "text" "contacts";
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+  }
+  .homepage-text-div {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .homepage-contacts-div-small-screens {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  #aboutpage-grid-div {
+    grid-template-areas: "text text" "image contacts";
+    grid-template-columns: minmax(100px, 200px) auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 

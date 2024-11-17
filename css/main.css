@@ -4,6 +4,9 @@
 body {
   background-color: #e3e6e0;
 }
+.container {
+  margin-top: 5rem;
+}
 
 /*HEADER*/
 .navbar {
@@ -119,10 +122,12 @@ footer {
   display: flex;
   gap: 5px;
 }
-.aboutpage-link-group a {
+.aboutpage-link-group a,
+.webdev-a {
   color: #d48428;
 }
-.aboutpage-link-group a:hover {
+.aboutpage-link-group a:hover,
+.webdev-a:hover {
   color: #93460b;
 }
 
@@ -170,12 +175,19 @@ footer {
 }
 
 /* PROJECTS */
+
 .project-group-h {
   font-weight: 200;
   font-size: 1.2rem;
 }
 .project-title {
   font-size: 1rem;
+  margin-top: 1rem;
+}
+.webdev-project-title {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 .proj-section {
   padding-left: 5vw;
@@ -228,7 +240,6 @@ footer {
 .change-of-heart-img,
 .light-shadow-stamps,
 .organizing-group,
-.pastiche,
 .reflection-group,
 #mindlog-site-map {
   padding-left: 10vw;
@@ -252,12 +263,13 @@ footer {
 }
 
 .organizing-elements,
-.collage,
+.pastiche,
 .culture-day {
   padding-left: 20vw;
   padding-right: 20vw;
 }
 .pottery-class,
+.collage,
 .halloween-movienight,
 .me-as-an-artist {
   padding-left: 25vw;
@@ -269,10 +281,6 @@ footer {
   padding-left: 10vw;
   padding-right: 10vw;
 }
-/* #thebeatles-logo-redblue {
-  padding: 8px;
-  margin-bottom: 7px;
-} */
 .lillyblooms-logo {
   padding: 10px;
 }

@@ -174,15 +174,17 @@ footer {
   }
 }
 
+/*---*/
 /* PROJECTS */
-
+/*---*/
 .project-group-h {
   font-weight: 200;
   font-size: 1.2rem;
 }
 .project-title {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 .webdev-project-title {
   font-size: 1rem;
@@ -199,6 +201,12 @@ footer {
   display: flex;
   justify-content: center;
 }
+.webdev-section-heading {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+}
 #proj-logo-loveandcr,
 #proj-logo-paulalucane {
   margin-top: auto;
@@ -208,8 +216,29 @@ footer {
 #proj-logo-thebeatles {
   padding: 2%;
 }
+/*hover for project images*/
+.proj-section img {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.proj-section img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+.proj-section .webdev-img {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.proj-section .webdev-img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
 
-/*project pages*/
+/*---*/
+/*PROJECT PAGES*/
+/*---*/
 .project-title-page-heading {
   font-size: 1.2rem;
   margin-bottom: 1rem;

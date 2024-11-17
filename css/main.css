@@ -35,6 +35,21 @@ body {
 /*FOOTER*/
 footer {
   background-color: #414d55;
+  height: 5rem;
+}
+.footer-contacts-div {
+  display: flex;
+  justify-content: center;
+}
+#homepage-footer-contacts {
+  display: none;
+}
+#footer-linkedin-icon,
+#footer-email-icon {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* HOME PAGE */
@@ -75,11 +90,13 @@ footer {
   margin-top: 15%;
   margin-bottom: 5%;
 }
+/*no longer used
 .homepage-contacts-div-small-screens {
-  /*this is the same content as .homepage-contacts-div, but outside the text-div*/
-  /*this is hidden on big screen but shows up on a small screen for media query 768px*/
-  display: none;
+/*this is the same content as .homepage-contacts-div, but outside the text-div*/
+/*this is hidden on big screen but shows up on a small screen for media query 768px*/
+/*display: none;
 }
+*/
 
 /* ABOUT PAGE */
 #aboutpage-grid-div {
@@ -109,6 +126,7 @@ footer {
   .homepage-contacts-div {
     display: none;
   }
+  /* no longer used
   .homepage-contacts-div-small-screens {
     display: contents;
     display: flex;
@@ -118,10 +136,9 @@ footer {
   }
   #md-screen-linkedin,
   #md-screen-email {
-    /*centers these*/
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
   /*aboutpage*/
   .aboutpage-text-div p,
   #aboutpage-contact-div p {
@@ -130,6 +147,10 @@ footer {
   }
   #aboutpage-greeting {
     font-size: 1.3rem;
+  }
+  /*footer*/
+  #homepage-footer-contacts {
+    display: flex;
   }
 }
 @media screen and (max-width: 600px) {
@@ -148,10 +169,11 @@ footer {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+  /*no longer used
   .homepage-contacts-div-small-screens {
     margin-top: 0;
     margin-bottom: 2rem;
-  }
+  }*/
   #aboutpage-grid-div {
     grid-template-areas: "text text" "image contacts";
     grid-template-columns: minmax(100px, 200px) auto;

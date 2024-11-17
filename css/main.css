@@ -87,16 +87,9 @@ footer {
   font-style: normal;
 }
 .homepage-contacts-div {
-  margin-top: 15%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-/*no longer used
-.homepage-contacts-div-small-screens {
-/*this is the same content as .homepage-contacts-div, but outside the text-div*/
-/*this is hidden on big screen but shows up on a small screen for media query 768px*/
-/*display: none;
-}
-*/
 
 /* ABOUT PAGE */
 #aboutpage-grid-div {
@@ -126,19 +119,6 @@ footer {
   .homepage-contacts-div {
     display: none;
   }
-  /* no longer used
-  .homepage-contacts-div-small-screens {
-    display: contents;
-    display: flex;
-    flex-direction: column;
-    grid-area: contacts;
-    margin-top: 5rem;
-  }
-  #md-screen-linkedin,
-  #md-screen-email {
-    margin-left: auto;
-    margin-right: auto;
-  }*/
   /*aboutpage*/
   .aboutpage-text-div p,
   #aboutpage-contact-div p {
@@ -156,8 +136,6 @@ footer {
 @media screen and (max-width: 600px) {
   .homepage-grid-div {
     display: grid;
-    /*align-items: end; /*aligns vertically */
-    /*justify-content: center; /*aligns horizontally, like MS Word*/
     margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -169,11 +147,6 @@ footer {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
-  /*no longer used
-  .homepage-contacts-div-small-screens {
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }*/
   #aboutpage-grid-div {
     grid-template-areas: "text text" "image contacts";
     grid-template-columns: minmax(100px, 200px) auto;
@@ -201,10 +174,6 @@ footer {
   display: flex;
   justify-content: center;
 }
-/* .cmbyn-preview-img {
-  padding-left: 5%;
-  padding-right: 5%;
-} */
 #proj-logo-loveandcr,
 #proj-logo-paulalucane {
   margin-top: auto;
@@ -212,8 +181,6 @@ footer {
 }
 #proj-logo-paulalucane,
 #proj-logo-thebeatles {
-  /* padding-left: 3%;
-  padding-right: 3%; */
   padding: 2%;
 }
 

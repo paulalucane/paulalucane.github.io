@@ -2,7 +2,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #e3e6e0;
+  /* background-color: #e3e6e0; */
+  background-color: #f0f3ed;
 }
 .container {
   margin-top: 5rem;
@@ -362,7 +363,7 @@ h2,
   }
 }
 
-img {
+img:not(.no-scroll-animation) {
   animation: fade-img linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 20%;

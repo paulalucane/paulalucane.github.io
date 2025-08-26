@@ -334,7 +334,7 @@ h3 {
   height: 50px;
 }
 
-/*ANIMATION FOR ILLUSTRATIONS*/
+/*ANIMATION FOR HOMEPAGE ILLUSTRATIONS*/
 #homepage-illustration-img {
   animation: pulsate 2s infinite; /* 2s = duration of the cycle, infinite = repeat forever */
   animation-delay: 1s; /* Start pulsing after a 1-second delay*/
@@ -359,9 +359,8 @@ h3 {
 }
 
 /*scroll animation*/
-p,
-h1,
-h2,
+.proj-section-heading h1,
+.proj-section h2,
 .webdev-a {
   animation: fade linear both;
   animation-timeline: view();
@@ -376,7 +375,7 @@ h2,
   }
 }
 
-img:not(.no-scroll-animation) {
+.proj-section img {
   animation: fade-img linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 20%;

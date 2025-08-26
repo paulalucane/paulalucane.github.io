@@ -202,6 +202,10 @@ footer {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+#last-proj-section {
+  /*to add space between last project section and footer in project page*/
+  margin-bottom: 5rem;
+}
 .proj-section-heading {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -257,6 +261,7 @@ h3 {
   font-weight: 500;
   font-size: 1rem;
   color: var(--stormcould-blue);
+  margin-top: 2rem;
 }
 .proj-desc {
   font-weight: 300;
@@ -265,6 +270,27 @@ h3 {
 .proj-desc-createdwith {
   font-weight: 400;
   font-size: 0.95rem;
+}
+.proj-indepth-desc-section {
+  /*above 992px*/
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem; /*matches the last-proj-image margin*/
+}
+@media screen and (max-width: 992px) {
+  /*under 992px but above 600px*/
+  .proj-indepth-desc-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*under 600px*/
+  .proj-indepth-desc-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 /*coffeetable book and title layout*/
 .coffebook-layout1,
@@ -296,10 +322,6 @@ h3 {
 .last-proj-img {
   /*to add space between last image and footer in individual project pages*/
   margin-bottom: 2rem;
-}
-#last-proj-section {
-  /*to add space between last project section and footer in project page*/
-  margin-bottom: 5rem;
 }
 .cmbyn-sticker-sheet {
   padding-left: 20vw;

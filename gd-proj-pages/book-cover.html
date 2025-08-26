@@ -3,7 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Paula Lucane portfolio</title>
+    <!-- link bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- link css file -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!--link Poppins font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link Roca font family -->
+    <link rel="stylesheet" href="https://use.typekit.net/skg2xns.css" />
   </head>
-  <body></body>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <!-- logo -->
+        <a class="navbar-brand nested-svg-a" href="../index.html">
+          <object
+            class="clickable-svg"
+            data="../img/navbar-logo-light.svg"
+            type="image/svg+xml"
+            height="25"
+          ></object>
+        </a>
+        <!-- button for collapsible navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        ></button>
+        <!-- navigation -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects.html">Graphic Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../webdev.html">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container flex-grow-1">
+      <h2 class="project-title-page-heading">Illustrated Book Cover</h2>
+      <div class="row">
+        <div>
+          <p class="col-lg-4 col-md-6 proj-desc">
+            This is an illustrated book cover for Toshikazu Kawaguchi's
+            <span class="mimic-h3">Before the Coffee Gets Cold.</span>
+          </p>
+          <p class="col-lg-4 col-md-6 proj-desc">
+            This project was created as part of content creation course at
+            Jönköping University. I chose this specific book because it is one
+            of my favourites and the themes explored in the story felt
+            especially inspirational. Read more about the creation process
+            below!
+          </p>
+          <p class="col-lg-4 col-md-6 proj-desc-createdwith">
+            Created with: ProCreate, Adobe Illustrator, Adobe Photoshop
+          </p>
+        </div>
+      </div>
+      <section class="row">
+        <img
+          class="img-fluid pt-3"
+          src="../img/illustrations/book-cover-mockup-transp.png"
+          alt="stacked books showcasing the front cover"
+        />
+      </section>
+      <section class="proj-indepth-desc-section">
+        <p class="proj-desc">
+          This novel is set in Tokyo, Japan, in a small café. It follows
+          different characters, all somehow connected, as they travel back in
+          time to visit their loved ones from the past. There is just one rule
+          they absolutely have to remember, they have to return to the present
+          before the coffee gets cold.
+        </p>
+        <h3>Concept and Themes</h3>
+        <p class="proj-desc">
+          To represent the title of the book and the central theme of coffee and
+          the limited time I Illustrated a coffee cup, the steam of which forms
+          the watch hands showing the time. The hours are not represented by
+          real numbers but just by two lines, as the concept of time in this
+          novel is a little warped and unclear.
+        </p>
+        <p class="proj-desc">
+          Additional themes of this book are love, relationships, regret and
+          grief, and, of course, a little bit of magic in the ordinary. I chose
+          darker shades of pink for love, blue for grief, the brown for coffee
+          and the dark wood furniture inside the café. The overall color palette
+          is representative of the vintage, heartfelt, cosy, and a little dark
+          aesthetic of the story.
+        </p>
+      </section>
+      <section class="proj-indepth-desc-section pt-0">
+        <img
+          class="img-fluid"
+          src="../img/illustrations/book-cover-cup-illustration.png"
+          alt="illustrated cup in Japanese art of kintsugi style"
+        />
+      </section>
+      <section class="proj-indepth-desc-section">
+        <h3>Japanese Influence</h3>
+        <p class="proj-desc">
+          When illustrating the coffee cup I searched for inspiration in
+          Japanese china design. I came across the Japanese art of kintsugi,
+          where a piece of ceramic has been repaired with visible golden joins.
+          This method celebrates imperfection and the history of the object.
+        </p>
+        <p class="proj-desc">
+          I thought it was an excellent fit for the cover as it visually
+          represents the healing and transformation that the characters go
+          through as they return back to present, after visiting the past. It
+          also represents the passing of time, and is, of course, connected to
+          coffee.
+        </p>
+        <p class="proj-desc">
+          For the background, I took inspiration from vintage Japanese wallpaper
+          and included the illustrations of cherry blossoms, cranes, Mount Fuji
+          and a temple silhouette.
+        </p>
+      </section>
+      <section class="proj-indepth-desc-section">
+        <img
+          class="img-fluid py-3"
+          src="../img/illustrations/book-cover-illustrations.png"
+          alt="Japanese inspired illustrations"
+        />
+        <h3>The Final Design</h3>
+        <img
+          class="img-fluid last-proj-img pt-3"
+          src="../img/illustrations/book-cover-final-product.png"
+          alt="flatlay of the finished book cover"
+        />
+      </section>
+    </main>
+    <footer class="mt-auto">
+      <div class="footer-contacts-div">
+        <a
+          class="nested-svg-a"
+          id="footer-linkedin-icon"
+          href="https://www.linkedin.com/in/paula-luc%C4%81ne-5b3207324/"
+          target="_blank"
+        >
+          <object
+            class="clickable-svg"
+            data="../img/logo/linkedin-black.svg"
+            type="image/svg+xml"
+            width="30"
+          ></object
+        ></a>
+        <a
+          class="nested-svg-a"
+          id="footer-email-icon"
+          href="mailto:paula.lucane@gmail.com"
+          target="_blank"
+        >
+          <object
+            class="clickable-svg"
+            data="../img/logo/mail.svg"
+            type="image/svg+xml"
+            width="30"
+          ></object
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>

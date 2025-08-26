@@ -318,6 +318,26 @@ h3 {
   padding-left: 25vw;
   padding-right: 25vw;
 }
+/* culture days */
+/* only used if individual images are used to display the grid, not in use currently */
+.culture-day-group-grid {
+  display: grid;
+  grid-template-columns: 46.3% 53.7%; /* 2 columns */
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  grid-template-areas:
+    "first third"
+    "second third";
+}
+.cd-grid-item1 {
+  grid-area: first;
+}
+.cd-grid-item2 {
+  grid-area: second;
+}
+.cd-grid-item3 {
+  grid-area: third;
+}
 /*logos*/
 .logo-section {
   /*logo section for the beatles and lilly bloom's*/

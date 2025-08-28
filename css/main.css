@@ -393,6 +393,20 @@ h3,
   height: 7vw;
   border-radius: 50%;
 }
+@media screen and (max-width: 992px) {
+  /*under 992px and above 600px*/
+  .color-swatch {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*under 600px*/
+  .color-swatch {
+    width: 12vw;
+    height: 12vw;
+  }
+}
 #book-cover-pink.color-swatch {
   background-color: #924551;
 }

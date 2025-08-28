@@ -376,6 +376,34 @@ h3,
 .extra-space-div {
   height: 50px;
 }
+/*book cover*/
+/*stylised colour swatch circles*/
+.color-swatch-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.color-swatch {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+}
+#book-cover-pink.color-swatch {
+  background-color: #924551;
+}
+#book-cover-orange.color-swatch {
+  background-color: #da7905;
+}
+#book-cover-blue.color-swatch {
+  background-color: #728ca1;
+}
+#book-cover-brown.color-swatch {
+  background-color: #502a24;
+}
+.color-swatch-group p {
+  font-size: 0.8rem;
+}
 
 /*ANIMATION FOR HOMEPAGE ILLUSTRATIONS*/
 #homepage-illustration-img {

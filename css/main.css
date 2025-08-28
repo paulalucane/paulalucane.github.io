@@ -130,10 +130,12 @@ footer {
   gap: 5px;
 }
 .aboutpage-link-group a,
+.proj-indepth-desc-section a,
 .webdev-a {
   color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
+.proj-indepth-desc-section a:hover,
 .webdev-a:hover {
   color: var(--burnt-abmer);
 }
@@ -264,7 +266,8 @@ h3,
   color: var(--stormcould-blue);
   margin-top: 2rem;
 }
-.proj-desc {
+.proj-desc,
+.proj-indepth-desc-section a {
   font-weight: 300;
   font-size: 0.95rem;
 }
@@ -284,6 +287,7 @@ h3,
   .proj-indepth-desc-section {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 600px) {

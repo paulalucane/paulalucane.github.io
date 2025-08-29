@@ -1,8 +1,17 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --midnight-blue: #172126;
+  --stormcould-blue: #414d55;
+  --misty-white: #e3e6e0;
+  --blush-pink: #f6dce0;
+  --marigold: #d48428;
+  --burnt-abmer: #93460b;
+}
 body {
-  background-color: #e3e6e0;
+  /* background-color: var(--misty-white); */
+  background-color: #f0f3ed;
 }
 .container {
   margin-top: 5rem;
@@ -11,7 +20,7 @@ body {
 /*HEADER*/
 .navbar {
   /* background-color: #d9c2d3; */
-  background-color: #414d55;
+  background-color: var(--stormcould-blue);
   padding-left: 10vw;
   padding-right: 10vw;
   /* justify-content: flex-end; */
@@ -24,8 +33,8 @@ body {
 }
 .navbar-toggler {
   /*collapse navbar button*/
-  border-color: #d48428;
-  border-color: #e3e6e0;
+  border-color: var(--marigold);
+  border-color: var(--misty-white);
   border-width: 2px;
 }
 /*for logo and linkedin icon*/
@@ -37,7 +46,7 @@ body {
 }
 /*FOOTER*/
 footer {
-  background-color: #414d55;
+  background-color: var(--stormcould-blue);
   height: 5rem;
 }
 .footer-contacts-div {
@@ -82,9 +91,7 @@ footer {
 #homepage-greeting,
 #aboutpage-greeting {
   font-size: 1.5rem;
-  /* color: #978b75; */ /*light brown*/
-  /* color: #93460b; */ /*dark orange*/
-  color: #d48428;
+  color: var(--marigold);
   font-family: "roca", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -123,12 +130,16 @@ footer {
   gap: 5px;
 }
 .aboutpage-link-group a,
+.proj-indepth-desc-section a,
+.a-text-link,
 .webdev-a {
-  color: #d48428;
+  color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
+.proj-indepth-desc-section a:hover,
+.a-text-link:hover,
 .webdev-a:hover {
-  color: #93460b;
+  color: var(--burnt-abmer);
 }
 
 @media screen and (max-width: 768px) {
@@ -195,6 +206,10 @@ footer {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+#last-proj-section {
+  /*to add space between last project section and footer in project page*/
+  margin-bottom: 5rem;
+}
 .proj-section-heading {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -240,17 +255,50 @@ footer {
 /*PROJECT PAGES*/
 /*---*/
 .project-title-page-heading {
+  /*usually applied to h2*/
   font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
-.proj-desc {
+h3,
+.mimic-h3 {
+  font-family: "roca", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--stormcould-blue);
+  margin-top: 2rem;
+}
+.proj-desc,
+.proj-indepth-desc-section a,
+.a-text-link {
   font-weight: 300;
   font-size: 0.95rem;
 }
 .proj-desc-createdwith {
   font-weight: 400;
   font-size: 0.95rem;
+}
+.proj-indepth-desc-section {
+  /*above 992px*/
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem; /*matches the last-proj-image margin*/
+}
+@media screen and (max-width: 992px) {
+  /*under 992px but above 600px*/
+  .proj-indepth-desc-section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*under 600px*/
+  .proj-indepth-desc-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 /*coffeetable book and title layout*/
 .coffebook-layout1,
@@ -283,10 +331,6 @@ footer {
   /*to add space between last image and footer in individual project pages*/
   margin-bottom: 2rem;
 }
-#last-proj-section {
-  /*to add space between last project section and footer in project page*/
-  margin-bottom: 5rem;
-}
 .cmbyn-sticker-sheet {
   padding-left: 20vw;
 }
@@ -304,6 +348,26 @@ footer {
   padding-left: 25vw;
   padding-right: 25vw;
 }
+/* culture days */
+/* only used if individual images are used to display the grid, not in use currently */
+.culture-day-group-grid {
+  display: grid;
+  grid-template-columns: 46.3% 53.7%; /* 2 columns */
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  grid-template-areas:
+    "first third"
+    "second third";
+}
+.cd-grid-item1 {
+  grid-area: first;
+}
+.cd-grid-item2 {
+  grid-area: second;
+}
+.cd-grid-item3 {
+  grid-area: third;
+}
 /*logos*/
 .logo-section {
   /*logo section for the beatles and lilly bloom's*/
@@ -319,8 +383,50 @@ footer {
 .extra-space-div {
   height: 50px;
 }
+/*book cover*/
+/*stylised colour swatch circles*/
+.color-swatch-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.color-swatch {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+}
+@media screen and (max-width: 992px) {
+  /*under 992px and above 600px*/
+  .color-swatch {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*under 600px*/
+  .color-swatch {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+#book-cover-pink.color-swatch {
+  background-color: #924551;
+}
+#book-cover-orange.color-swatch {
+  background-color: #da7905;
+}
+#book-cover-blue.color-swatch {
+  background-color: #728ca1;
+}
+#book-cover-brown.color-swatch {
+  background-color: #502a24;
+}
+.color-swatch-group p {
+  font-size: 0.8rem;
+}
 
-/*ANIMATION FOR ILLUSTRATIONS*/
+/*ANIMATION FOR HOMEPAGE ILLUSTRATIONS*/
 #homepage-illustration-img {
   animation: pulsate 2s infinite; /* 2s = duration of the cycle, infinite = repeat forever */
   animation-delay: 1s; /* Start pulsing after a 1-second delay*/
@@ -345,9 +451,8 @@ footer {
 }
 
 /*scroll animation*/
-p,
-h1,
-h2,
+.proj-section-heading h1,
+.proj-section h2,
 .webdev-a {
   animation: fade linear both;
   animation-timeline: view();
@@ -362,7 +467,7 @@ h2,
   }
 }
 
-img {
+.proj-section img {
   animation: fade-img linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 20%;

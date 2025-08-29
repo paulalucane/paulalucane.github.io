@@ -131,11 +131,13 @@ footer {
 }
 .aboutpage-link-group a,
 .proj-indepth-desc-section a,
+.a-text-link,
 .webdev-a {
   color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
 .proj-indepth-desc-section a:hover,
+.a-text-link:hover,
 .webdev-a:hover {
   color: var(--burnt-abmer);
 }
@@ -267,7 +269,8 @@ h3,
   margin-top: 2rem;
 }
 .proj-desc,
-.proj-indepth-desc-section a {
+.proj-indepth-desc-section a,
+.a-text-link {
   font-weight: 300;
   font-size: 0.95rem;
 }

@@ -131,13 +131,13 @@ footer {
 }
 .aboutpage-link-group a,
 .proj-indepth-desc-section a,
-.a-text-link,
+.paragraph-style-link,
 .webdev-a {
   color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
 .proj-indepth-desc-section a:hover,
-.a-text-link:hover,
+.paragraph-style-link:hover,
 .webdev-a:hover {
   color: var(--burnt-abmer);
 }
@@ -254,6 +254,8 @@ footer {
 /*---*/
 /*PROJECT PAGES*/
 /*---*/
+/*GENERAL*/
+/**/
 .project-title-page-heading {
   /*usually applied to h2*/
   font-size: 1.2rem;
@@ -270,7 +272,7 @@ h3,
 }
 .proj-desc,
 .proj-indepth-desc-section a,
-.a-text-link {
+.paragraph-style-link {
   font-weight: 300;
   font-size: 0.95rem;
 }
@@ -284,6 +286,10 @@ h3,
   padding-right: 10vw;
   margin-top: 1rem;
   margin-bottom: 2rem; /*matches the last-proj-image margin*/
+}
+.last-proj-img {
+  /*to add space between last image and footer in individual project pages*/
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 992px) {
   /*under 992px but above 600px*/
@@ -300,6 +306,8 @@ h3,
     padding-right: 5vw;
   }
 }
+/*INDIVIDUAL*/
+/**/
 /*coffeetable book and title layout*/
 .coffebook-layout1,
 .title-layout1 {
@@ -327,12 +335,15 @@ h3,
   max-width: 50%;
   padding-top: 10px;
 }
-.last-proj-img {
-  /*to add space between last image and footer in individual project pages*/
-  margin-bottom: 2rem;
-}
+
 .cmbyn-sticker-sheet {
   padding-left: 20vw;
+}
+.img-padding-15vw {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .organizing-elements,
@@ -389,26 +400,12 @@ h3,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 .color-swatch {
   width: 7vw;
   height: 7vw;
   border-radius: 50%;
-}
-@media screen and (max-width: 992px) {
-  /*under 992px and above 600px*/
-  .color-swatch {
-    width: 10vw;
-    height: 10vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  /*under 600px*/
-  .color-swatch {
-    width: 12vw;
-    height: 12vw;
-  }
 }
 #book-cover-pink.color-swatch {
   background-color: #924551;
@@ -424,9 +421,137 @@ h3,
 }
 .color-swatch-group p {
   font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1px;
+}
+/*personal branding*/
+/*  */
+/*  */
+#animated-logo-full-width-background {
+  background-color: var(--stormcould-blue);
+  margin-top: 2rem;
+  height: 12rem;
+  z-index: 0;
+}
+#animated-logo-video {
+  /* item does not exist yet */
+  z-index: 1;
+}
+#personal-branding-values {
+  color: var(--marigold);
+}
+#poppins-font-background {
+  background-color: var(--stormcould-blue);
+}
+#roca-font-background {
+  background-color: var(--blush-pink);
+}
+#poppins-font-background p {
+  color: var(--misty-white);
+  font-weight: 300;
+  font-size: 0.95rem;
+  text-align: center;
+}
+#roca-font-background p {
+  color: var(--marigold);
+  font-size: 0.95rem;
+  font-family: "roca", sans-serif;
+  text-align: center;
+}
+.color-swatch-name {
+  font-family: "roca", sans-serif;
+  font-style: normal;
+  color: var(--midnight-blue);
+  text-wrap: nowrap;
+  padding-bottom: 1rem;
+}
+#blush-pink-color-swatch {
+  background-color: var(--blush-pink);
+}
+#marigold-color-swatch {
+  background-color: var(--marigold);
+}
+#amber-color-swatch {
+  background-color: var(--burnt-abmer);
+}
+#midnight-blue-color-swatch {
+  background-color: var(--midnight-blue);
+}
+#stormcloud-color-swatch {
+  background-color: var(--stormcould-blue);
+}
+#misty-white-color-swatch {
+  background-color: var(--misty-white);
+}
+/* because of different dom structure for different screen sizes, I have hidden one section on the larger screens and hidden the other on smaller */
+#imagery-container-small-screen {
+  display: none;
+}
+#imagery-container-big-screen {
+  display: flex;
+}
+#branding-icon-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+#branding-icon-flexbox img {
+  flex: 1 1 0; /*each takes equal share*/
+  /* flex: 1 1 120px; */
+  max-width: 120px;
+  min-width: 90px;
+  height: auto;
+}
+/*MEDIA QUARIES FOR INDIVIDUAL PROJECT PAGES*/
+@media screen and (max-width: 992px) {
+  /*under 992px and above 600px*/
+  .color-swatch {
+    width: 10vw;
+    height: 10vw;
+  }
+  .img-padding-15vw {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #imagery-container-small-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 1.5vw;
+  }
+  #imagery-container-big-screen {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*under 768px*/
+  .img-padding-15vw {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*under 600px*/
+  .color-swatch {
+    width: 12vw;
+    height: 12vw;
+  }
+  #poppins-font-background p,
+  #roca-font-background p {
+    font-size: 0.6rem;
+  }
+  #branding-icon-flexbox img {
+    max-width: 100px;
+    min-width: 80px;
+  }
 }
 
+/*---*/
 /*ANIMATION FOR HOMEPAGE ILLUSTRATIONS*/
+/*---*/
 #homepage-illustration-img {
   animation: pulsate 2s infinite; /* 2s = duration of the cycle, infinite = repeat forever */
   animation-delay: 1s; /* Start pulsing after a 1-second delay*/

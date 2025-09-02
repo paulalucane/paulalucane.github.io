@@ -484,10 +484,16 @@ h3,
   background-color: var(--misty-white);
 }
 /* because of different dom structure for different screen sizes, I have hidden one section on the larger screens and hidden the other on smaller */
-#imagery-container-small-screen {
+#imagery-container-small-screen,
+#logo-group-small-screen,
+#pattern-image-small-screen,
+#socialmedia-container-small-screen {
   display: none;
 }
-#imagery-container-big-screen {
+#imagery-container-big-screen,
+#logo-group-big-screen,
+#pattern-image-big-screen,
+#socialmedia-container-big-screen {
   display: flex;
 }
 #branding-icon-flexbox {
@@ -497,11 +503,37 @@ h3,
   justify-content: center;
 }
 #branding-icon-flexbox img {
-  flex: 1 1 0; /*each takes equal share*/
+  flex: 1 1 120px; /*each takes equal share*/
   /* flex: 1 1 120px; */
   max-width: 120px;
   min-width: 90px;
   height: auto;
+}
+/* #mockup-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+}
+#mockup-flex img {
+  max-height: 24vw;
+  min-height: 20vw;
+} */
+
+#mockup-full-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.mockup-flex-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1vw;
+  justify-content: center;
+}
+#mockup-full-flex img {
+  max-height: 24vw;
 }
 /*MEDIA QUARIES FOR INDIVIDUAL PROJECT PAGES*/
 @media screen and (max-width: 992px) {
@@ -514,14 +546,25 @@ h3,
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  #imagery-container-small-screen {
+  #imagery-container-small-screen,
+  #socialmedia-container-small-screen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     gap: 1.5vw;
   }
-  #imagery-container-big-screen {
+  #logo-group-small-screen,
+  #pattern-image-small-screen {
+    display: flex;
+  }
+  #imagery-container-big-screen,
+  #logo-group-big-screen,
+  #pattern-image-big-screen,
+  #socialmedia-container-big-screen {
     display: none;
+  }
+  #mockup-full-flex img {
+    max-height: 30vw;
   }
 }
 @media screen and (max-width: 768px) {

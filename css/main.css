@@ -430,6 +430,10 @@ h3,
 #animated-logo-full-width-background {
   background-color: #49565f; /*matches the video background*/
   margin-top: 2rem;
+  justify-content: center;
+}
+#animated-logo-video {
+  height: 240px;
 }
 #personal-branding-values {
   color: var(--marigold);
@@ -569,6 +573,9 @@ h3,
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  #animated-logo-video {
+    height: 180px;
+  }
 }
 @media screen and (max-width: 576px) {
   /*under 600px*/
@@ -583,6 +590,9 @@ h3,
   #branding-icon-flexbox img {
     max-width: 100px;
     min-width: 80px;
+  }
+  #animated-logo-video {
+    height: 160px;
   }
 }
 

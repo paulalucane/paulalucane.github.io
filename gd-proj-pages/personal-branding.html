@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- link css file -->
     <link rel="stylesheet" href="../css/main.css" />
+    <!-- link js file for video actions -->
+    <script src="../js/main.js" defer></script>
     <!--link Poppins font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,8 +83,15 @@
           </div>
         </div>
       </div>
-      <!-- insert image with animation -->
-      <div id="animated-logo-full-width-background"></div>
+      <div class="row" id="animated-logo-full-width-background">
+        <video id="animated-logo-video" width="320" height="240" autoplay>
+          <source
+            src="../img/personal-branding/pl-designs-logo-motion-starsound.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="container flex-grow-1">
         <section class="proj-indepth-desc-section">
           <p class="proj-desc">

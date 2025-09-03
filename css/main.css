@@ -428,14 +428,8 @@ h3,
 /*  */
 /*  */
 #animated-logo-full-width-background {
-  background-color: var(--stormcould-blue);
+  background-color: #49565f; /*matches the video background*/
   margin-top: 2rem;
-  height: 12rem;
-  z-index: 0;
-}
-#animated-logo-video {
-  /* item does not exist yet */
-  z-index: 1;
 }
 #personal-branding-values {
   color: var(--marigold);

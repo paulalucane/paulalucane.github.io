@@ -515,22 +515,11 @@ h3,
   justify-content: center;
 }
 #branding-icon-flexbox img {
-  flex: 1 1 120px; /*each takes equal share*/
-  /* flex: 1 1 120px; */
+  flex: 1 1 120px;
   max-width: 120px;
   min-width: 90px;
   height: auto;
 }
-/* #mockup-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1vw;
-  justify-content: center;
-}
-#mockup-flex img {
-  max-height: 24vw;
-  min-height: 20vw;
-} */
 
 #mockup-full-flex {
   display: flex;

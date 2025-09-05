@@ -61,42 +61,84 @@
       </nav>
     </header>
     <!-- pt-4 is a bootstrap class that adds top padding -->
-    <main class="container flex-grow-1">
-      <div class="homepage-grid-div">
-        <img
-          id="homepage-portrait-img"
-          src="img/me-cropped-straight-bw.png"
-          alt="portrait picture"
-        />
-        <img
-          id="homepage-illustration-img"
-          src="img/portrait-illustration-overlay-updated.png"
-          alt="illustrations on top of portrait"
-        />
-        <div class="homepage-text-div">
-          <p id="homepage-greeting">Hi there!</p>
-          <p id="homepage-paragraph">
-            My name is Paula and I am a second-year Graphic Design and Web
-            Development student at Jönköping University, Sweden. <br />Welcome
-            to my portfolio!
-          </p>
-          <div class="homepage-contacts-div">
-            <a
-              class="nested-svg-a"
-              href="https://www.linkedin.com/in/paula-luc%C4%81ne-5b3207324/"
-              target="_blank"
-            >
-              <object
-                class="clickable-svg"
-                data="img/logo/linkedin-black.svg"
-                type="image/svg+xml"
-                width="30"
-              ></object
-            ></a>
-            <p>paula.lucane@gmail.com</p>
+    <main>
+      <div class="container flex-grow-1">
+        <section class="homepage-main-content-section">
+          <div class="homepage-grid-div">
+            <img
+              id="homepage-portrait-img"
+              src="img/me-cropped-straight-bw.png"
+              alt="portrait picture"
+            />
+            <img
+              id="homepage-illustration-img"
+              src="img/portrait-illustration-overlay-updated.png"
+              alt="illustrations on top of portrait"
+            />
+            <div class="homepage-text-div">
+              <p id="homepage-greeting">Hi there!</p>
+              <p id="homepage-paragraph">
+                My name is Paula and I am a third-year Graphic Design and Web
+                Development student at Jönköping University, Sweden.
+                <br />Welcome to my portfolio!
+              </p>
+              <div class="homepage-contacts-div">
+                <a
+                  class="nested-svg-a"
+                  href="https://www.linkedin.com/in/paula-luc%C4%81ne-5b3207324/"
+                  target="_blank"
+                >
+                  <object
+                    class="clickable-svg"
+                    data="img/logo/linkedin-black.svg"
+                    type="image/svg+xml"
+                    width="30"
+                  ></object
+                ></a>
+                <p>paula.lucane@gmail.com</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
+      <section class="homepage-proj-section">
+        <h2 id="homepage-proj-section-h">Recent Work</h2>
+        <section class="row align-items-start" id="homepage-proj-row">
+          <!-- align-items-end helps with aligning images to the bottom line on smaller screens when text wraps for some but not all items creating an uneven layout-->
+          <div class="col-lg-4 col-sm-6">
+            <h2 class="project-title">Personal Branding</h2>
+            <a href="gd-proj-pages/personal-branding.html">
+              <img
+                class="img-fluid"
+                src="img/personal-branding/preview-gray.png"
+                alt="Personal Branding preview"
+              />
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h2 class="project-title">Scrapbook Video</h2>
+            <a href="gd-proj-pages/scrapbook-motion.html">
+              <img
+                class="img-fluid"
+                src="img/illustrations/scrapbook-motion-preview.png"
+                alt="book cover"
+              />
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h2 class="project-title">Coffee Table Book</h2>
+            <a href="/gd-proj-pages/coffeetablebook.html">
+              <img
+                class="img-fluid"
+                src="img/coffebook-layout1.png"
+                alt="coffebook layout preview"
+            /></a>
+          </div>
+        </section>
+        <a class="rounded-pill" id="homepage-proj-button" href="projects.html">
+          explore more projects
+        </a>
+      </section>
     </main>
     <footer class="mt-auto">
       <div class="footer-contacts-div" id="homepage-footer-contacts">

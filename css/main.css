@@ -270,6 +270,28 @@ h3,
   color: var(--stormcould-blue);
   margin-top: 2rem;
 }
+/*img-padding-10vw used to be for love-and-cr-img, .ai-im, .change-of-heart-img, .light-shadow-stamps, .organizing-group, .reflectio-group, #mindlog-site-map*/
+.img-padding-10vw {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 1rem;
+}
+.img-padding-15vw {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/*img-padding-20vw used to be for .organizing-elements, .pastiche, .culture-day*/
+.img-padding-20vw {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+/*img-padding-25vw used to be for .pottery-class, .collage, .halloween-movienight*/
+.img-padding-25vw {
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
 .proj-desc,
 .proj-indepth-desc-section a,
 .paragraph-style-link {
@@ -320,36 +342,14 @@ h3,
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
-/*img-padding-10vw used to be for love-and-cr-img, .ai-im, .change-of-heart-img, .light-shadow-stamps, .organizing-group, .reflectio-group, #mindlog-site-map*/
-.img-padding-10vw {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 10px;
+.cmbyn-sticker-sheet {
+  padding-left: 20vw;
 }
 .ai-cover-img {
   max-width: 50%;
   padding-top: 10px;
 }
 
-.cmbyn-sticker-sheet {
-  padding-left: 20vw;
-}
-.img-padding-15vw {
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-/*img-padding-20vw used to be for .organizing-elements, .pastiche, .culture-day*/
-.img-padding-20vw {
-  padding-left: 20vw;
-  padding-right: 20vw;
-}
-/*img-padding-25vw used to be for .pottery-class, .collage, .halloween-movienight*/
-.img-padding-25vw {
-  padding-left: 25vw;
-  padding-right: 25vw;
-}
 /* culture days */
 /* only used if individual images are used to display the grid, not in use currently */
 .culture-day-group-grid {

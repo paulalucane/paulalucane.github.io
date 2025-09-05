@@ -121,6 +121,10 @@ footer {
   font-style: normal;
   margin-top: 2rem;
 }
+#homepage-proj-row .project-title {
+  color: var(--stormcould-blue);
+  /* font-weight: 400; */
+}
 #homepage-proj-button {
   width: fit-content;
   margin-top: 3rem;

@@ -31,6 +31,9 @@ body {
 .navbar-nav {
   margin-left: auto;
 }
+#current-visited-nav-link {
+  color: var(--misty-white);
+}
 .navbar-toggler {
   /*collapse navbar button*/
   border-color: var(--marigold);

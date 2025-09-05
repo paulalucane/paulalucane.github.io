@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- link css file -->
     <link rel="stylesheet" href="../css/main.css" />
+    <!-- link js file for video actions -->
+    <script src="../js/main.js" defer></script>
     <!--link Poppins font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,31 +63,417 @@
       </nav>
     </header>
     <!-- pt-4 is a bootstrap class that adds top padding -->
-    <main class="container flex-grow-1">
-      <h2 class="project-title-page-heading">Personal Branding</h2>
-      <div class="row">
-        <div>
-          <p class="col-lg-4 col-md-6 proj-desc">
-            This is my personal branding, created as a part of university
-            assignments.
-          </p>
-          <p class="col-lg-4 col-md-6 proj-desc">
-            This is possibly the project I have had the most fun creating. I put
-            in a lot of work to make this truly personal and meaningful in every
-            detail, and it might just be my proudest design so far.
-          </p>
-          <p class="col-lg-4 col-md-6 proj-desc-createdwith">
-            Created with: Adobe Illustrator, Adobe InDesign, Procreate
-          </p>
+    <main class="pt-4">
+      <div class="container flex-grow-1">
+        <h2 class="project-title-page-heading">Personal Branding</h2>
+        <div class="row">
+          <div>
+            <p class="col-lg-4 col-md-6 proj-desc">
+              Welcome to paula lucane designs. This is my personal branding and
+              reflects not only me as a person but as an artist and a designer
+              as well.
+            </p>
+            <p class="col-lg-4 col-md-6 proj-desc">
+              I put in a lot of work to make this truly personal and meaningful
+              in every detail from brand values and logo to patterns and their
+              use, and it might just be my proudest design so far.
+            </p>
+            <p class="col-lg-4 col-md-6 proj-desc-createdwith">
+              Created with: Adobe Illustrator, Adobe InDesign, Procreate
+            </p>
+          </div>
         </div>
       </div>
-      <section>
-        <img
-          class="img-fluid love-and-cr-img"
-          src="../img/personal-branding/full-scroll.png"
-          alt="real life examples"
-        />
+      <div class="row" id="animated-logo-full-width-background">
+        <video id="animated-logo-video" autoplay>
+          <source
+            src="../img/personal-branding/pl-designs-logo-motion-starsound.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container flex-grow-1">
+        <section class="proj-indepth-desc-section pb-4">
+          <div id="portrait-illustration-grid">
+            <img
+              id="personal-branding-portrait-img"
+              src="../img/me-cropped-straight-bw.png"
+              alt="portrait picture"
+            />
+            <img
+              id="personal-branding-illustration-img"
+              src="../img/portrait-illustration-overlay-updated.png"
+              alt="illustrations on top of portrait"
+            />
+          </div>
+        </section>
+        <section class="proj-indepth-desc-section">
+          <p class="proj-desc">
+            I put a lot of though into every detail when it comes to my designs.
+            The same consideration was present when creating my own personal
+            branding. To make sure the overall look and feel was consistent and
+            aligned, I started by defining my values, These values reflect not
+            only in this branding but in my overall design style and philosophy.
+          </p>
+          <h3 class="pt-3" id="personal-branding-values">
+            Values: playful, warm, delicate
+          </h3>
+          <h3>Colours</h3>
+          <p class="proj-desc">
+            I chose the following colors based on what I liked and what I
+            thought fit my personality well. I love autumn, I take a lot of
+            photographs during that time, and often use warm colors in my
+            designs. That is why I chose the warm oranges. Blue complements
+            orange, but I mostly reach for more dusty colors, so I chose less
+            saturated blues. I added pink because it is my favorite color and it
+            adds more playfulness to the mix.
+          </p>
+        </section>
+        <section class="proj-indepth-desc-section pt-5">
+          <!-- colours -->
+          <div class="d-flex row justify-content-center">
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="blush-pink-color-swatch"></div>
+              <p>#f6dce0</p>
+              <p class="color-swatch-name mt-0">Blush Pink</p>
+            </div>
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="marigold-color-swatch"></div>
+              <p>#d48428</p>
+              <p class="color-swatch-name mt-0">Marigold</p>
+            </div>
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="amber-color-swatch"></div>
+              <p>#93460b</p>
+              <p class="color-swatch-name mt-0">Burnt Amber</p>
+            </div>
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="midnight-blue-color-swatch"></div>
+              <p>#172126</p>
+              <p class="color-swatch-name mt-0">Midnight Blue</p>
+            </div>
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="stormcloud-color-swatch"></div>
+              <p>#414d55</p>
+              <p class="color-swatch-name mt-0">Stormcloud Blue</p>
+            </div>
+            <div class="color-swatch-group col-md-2 col-4">
+              <div class="color-swatch" id="misty-white-color-swatch"></div>
+              <p>#e3e6e0</p>
+              <p class="color-swatch-name mt-0">Misty White</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <img
+            class="img-fluid img-padding-15vw"
+            src="../img/personal-branding/personal-branding-illustrations.png"
+            alt="handdrawn line illustrations"
+          />
+        </section>
+      </div>
+      <section class="row mt-3 mt-sm-5">
+        <div class="col-6 p-sm-5 p-3" id="poppins-font-background">
+          <p class="pt-lg-4">Poppins</p>
+          <p class="pb-lg-4">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            <br />abcdefghijklmnopqrstuvwxyz <br />0123456789!@#%&*
+          </p>
+        </div>
+        <div class="col-6 p-sm-5 p-3" id="roca-font-background">
+          <p class="pt-lg-4">Roca</p>
+          <p class="pb-lg-4">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            <br />abcdefghijklmnopqrstuvwxyz <br />0123456789!@#%&*
+          </p>
+        </div>
       </section>
+      <div class="container flex-grow-1">
+        <section class="proj-indepth-desc-section">
+          <h3>Imagery</h3>
+          <p class="proj-desc">
+            Imagery: warm, calm, low to mid exposure, with nature elements,
+            candles, warm drinks where possible. Since this is my personal
+            branding I shall aim to only use photography taken by me or of me.
+          </p>
+          <!-- the following is hidden on smaller screens -->
+          <div class="row g-3 pt-3" id="imagery-container-big-screen">
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-autumn1.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-blue-candle.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-pink.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-me-cropped.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-bw-logo.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-golden-like-daylight.png"
+              alt="imagery image autumn moodboard"
+            />
+          </div>
+          <!---->
+        </section>
+      </div>
+      <!-- the following is hidden on big screen -->
+      <div class="pt-4" id="imagery-container-small-screen">
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-autumn1.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-blue-candle.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-pink.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-me-cropped.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-bw-logo.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-golden-like-daylight.png"
+          alt="imagery image autumn moodboard"
+        />
+      </div>
+      <!---->
+      <div class="container flex-grow-1">
+        <section class="proj-indepth-desc-section">
+          <h3>Motion</h3>
+          <p class="proj-desc">
+            Motion can and should be used to engage the viewer. However, it
+            should remain controlled and deliberate, avoiding excessive speed or
+            chaotic movements that could disrupt the brand's calm and inviting
+            atmosphere. It can be playful, while maintaining a sense of delicacy
+            and balance.
+          </p>
+        </section>
+        <section class="proj-indepth-desc-section pt-xl-4 pt-md-3">
+          <h3>Icons</h3>
+          <p class="proj-desc">
+            These icons can be used for anything from Instagram highlights to
+            cute stickers to seal shut packaging envelopes.
+          </p>
+          <div class="py-sm-5 py-4" id="branding-icon-flexbox">
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-cup-1.png"
+              alt="cup icon on orange background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-candle-2.png"
+              alt="candle stick icon on gray background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-bow-3.png"
+              alt="pink bow icon on blue background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-cinnamonbun-4.png"
+              alt="cinnamon bun icon on pink background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-hearts-5.png"
+              alt="hearts icon on orange background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-cake-6.png"
+              alt="cake icon on dark background"
+            />
+            <img
+              class="img-fluid"
+              src="../img/personal-branding/sticker-flower-7.png"
+              alt="flower icon on pink background"
+            />
+          </div>
+        </section>
+        <section class="proj-indepth-desc-section pt-xl-4 pt-md-3">
+          <h3>Logo</h3>
+          <p class="proj-desc">
+            Here you can see the multiple variations of the logo. If space is
+            limited, the horizontally smaller logo can be used. All three
+            variations of this logo are displayed in the motion logo as you
+            enter this page. You can also see which color combinations work
+            together the best.
+          </p>
+          <img
+            class="img-fluid pt-5"
+            id="logo-group-big-screen"
+            src="../img/personal-branding/logo-group.png"
+            alt="group of different logos on colorful backgrounds"
+          />
+        </section>
+      </div>
+      <!-- hidden on big screens -->
+      <img
+        class="img-fluid pt-3"
+        id="logo-group-small-screen"
+        src="../img/personal-branding/logo-group.png"
+        alt="group of different logos on colorful backgrounds"
+      />
+      <!---->
+      <div class="container flex-grow-1">
+        <section class="proj-indepth-desc-section pt-xl-5 pt-md-3">
+          <h3>Pattern and Mockups</h3>
+          <p class="proj-desc">
+            The pattern is made up of brand illustrations. It can be used as
+            wrapping paper or envelope design when selling and shipping printed
+            or other physical items.
+          </p>
+          <img
+            class="img-fluid pt-4"
+            id="pattern-image-big-screen"
+            src="../img/personal-branding/pattern.png"
+            alt="group of different logos on colorful backgrounds"
+          />
+        </section>
+      </div>
+      <!-- hidden on large screens -->
+      <img
+        class="img-fluid pt-lg-0 pt-3"
+        id="pattern-image-small-screen"
+        src="../img/personal-branding/pattern.png"
+        alt="group of different logos on colorful backgrounds"
+      />
+      <!---->
+      <div class="container flex-grow-1 mt-0">
+        <section class="proj-indepth-desc-section p-3 pt-md-4">
+          <div class="p-3 pt-md-4 pt-lg-5" id="mockup-full-flex">
+            <div class="mockup-flex-row">
+              <img
+                class="img-fluid"
+                src="../img/personal-branding/mockup-1-envelope.png"
+                alt="imagery image autumn moodboard"
+              />
+              <img
+                class="img-fluid"
+                src="../img/personal-branding/mockup-2-tape.png"
+                alt="imagery image autumn moodboard"
+              />
+            </div>
+            <div class="mockup-flex-row">
+              <img
+                class="img-fluid"
+                src="../img/personal-branding/mockup-3-paper.png"
+                alt="imagery image autumn moodboard"
+              />
+              <img
+                class="img-fluid"
+                src="../img/personal-branding/mockup-4-stickers.png"
+                alt="imagery image autumn moodboard"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="proj-indepth-desc-section pt-xl-5 pt-md-3">
+          <h3>Social Media Template</h3>
+          <p class="proj-desc">
+            This layout can be used for Instagram feed: photography interlaced
+            with graphics.
+          </p>
+          <div class="row g-3 pt-3" id="socialmedia-container-big-screen">
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/soc-media-graphic-circles.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-blue-candle.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/soc-media-graphic-pattern.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-autumn1.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-bw-logo.png"
+              alt="imagery image autumn moodboard"
+            />
+            <img
+              class="img-fluid col-md-4 col-sm-6"
+              src="../img/personal-branding/imagery-golden-like-daylight.png"
+              alt="imagery image autumn moodboard"
+            />
+          </div>
+        </section>
+      </div>
+      <!-- hidden on large screens -->
+      <div class="pt-3 last-proj-img" id="socialmedia-container-small-screen">
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/soc-media-graphic-circles.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-blue-candle.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/soc-media-graphic-pattern.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-autumn1.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-bw-logo.png"
+          alt="imagery image autumn moodboard"
+        />
+        <img
+          class="img-fluid"
+          src="../img/personal-branding/imagery-golden-like-daylight.png"
+          alt="imagery image autumn moodboard"
+        />
+      </div>
+      <!---->
     </main>
     <footer class="mt-auto">
       <div class="footer-contacts-div">

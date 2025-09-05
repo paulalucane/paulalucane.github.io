@@ -320,13 +320,8 @@ h3,
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
-.love-and-cr-img,
-.ai-img,
-.change-of-heart-img,
-.light-shadow-stamps,
-.organizing-group,
-.reflection-group,
-#mindlog-site-map {
+/*img-padding-10vw used to be for love-and-cr-img, .ai-im, .change-of-heart-img, .light-shadow-stamps, .organizing-group, .reflectio-group, #mindlog-site-map*/
+.img-padding-10vw {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 10px;

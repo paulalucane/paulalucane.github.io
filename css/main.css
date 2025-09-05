@@ -585,6 +585,10 @@ h3,
   #animated-logo-video {
     height: 180px;
   }
+  #poppins-font-background p,
+  #roca-font-background p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 576px) {
   /*under 600px*/

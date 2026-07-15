@@ -623,7 +623,7 @@ h3,
 }
 
 .vertical-line {
-  border-left: 0.7px solid var(--smokey-brown);
+  border-left: 0.7px solid black;
   height: 300px;
 }
 

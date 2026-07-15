@@ -582,6 +582,12 @@ h3,
 #mockup-full-flex img {
   max-height: 24vw;
 }
+
+/*NÁRA*/
+#nara-body {
+  background-color: white;
+}
+
 /*MEDIA QUARIES FOR INDIVIDUAL PROJECT PAGES*/
 @media screen and (max-width: 992px) {
   /*under 992px and above 600px*/

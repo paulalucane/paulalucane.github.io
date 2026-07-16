@@ -622,6 +622,10 @@ h3,
   font-weight: 700;
 }
 
+.nara-body .asset-heading {
+  font-size: 0.7rem;
+}
+
 .vertical-line {
   border-left: 0.7px solid black;
   height: 300px;

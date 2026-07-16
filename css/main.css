@@ -631,6 +631,10 @@ h3,
   height: 300px;
 }
 
+#nara-promotional-reel {
+  height: 600px;
+}
+
 /*MEDIA QUARIES FOR INDIVIDUAL PROJECT PAGES*/
 @media screen and (max-width: 992px) {
   /*under 992px and above 600px*/
@@ -656,7 +660,8 @@ h3,
   #imagery-container-big-screen,
   #logo-group-big-screen,
   #pattern-image-big-screen,
-  #socialmedia-container-big-screen {
+  #socialmedia-container-big-screen,
+  #nara-hero-footer {
     display: none;
   }
   #mockup-full-flex img {
@@ -679,6 +684,9 @@ h3,
   }
   #animated-logo-video {
     height: 180px;
+  }
+  #nara-promotional-reel {
+    height: 500px;
   }
   #poppins-font-background p,
   #roca-font-background p {
@@ -707,6 +715,9 @@ h3,
   }
   #animated-logo-video {
     height: 160px;
+  }
+  #nara-promotional-reel {
+    height: 450px;
   }
 }
 

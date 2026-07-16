@@ -582,6 +582,61 @@ h3,
 #mockup-full-flex img {
   max-height: 24vw;
 }
+
+/*NÁRA*/
+.nara-body {
+  background-color: white;
+  /*NÁRA colour swatches*/
+  --lime-green: #e8ffca;
+  --dragonfruit-pink: #f40064;
+  --mango-orange: #ff9f2c;
+  --seashell-lilac: #ffebfc;
+  --espresso-brown: #351601;
+}
+.nara-body p {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; /*700 for bold*/
+  font-style: normal; /*or italic*/
+  font-size: 0.9rem;
+  margin-top: 0.2rem; /*needed for colour swatch value paragraphs*/
+}
+.nara-body h3 {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.nara-body h1 {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.nara-body .nara-colour-swatch-name {
+  font-weight: 700;
+  text-align: center;
+}
+
+.nara-body .asset-heading,
+.nara-body .color-swatch-group p {
+  font-size: 0.75rem;
+}
+
+.nara-vertical-line {
+  border-left: 0.7px solid black;
+}
+
+#nara-brand-concept-sec-visual,
+#nara-recipe-card-img {
+  padding-left: 17vw;
+  padding-right: 17vw;
+}
+
+#nara-promotional-reel {
+  height: 600px;
+}
+
 /*MEDIA QUARIES FOR INDIVIDUAL PROJECT PAGES*/
 @media screen and (max-width: 992px) {
   /*under 992px and above 600px*/
@@ -607,7 +662,8 @@ h3,
   #imagery-container-big-screen,
   #logo-group-big-screen,
   #pattern-image-big-screen,
-  #socialmedia-container-big-screen {
+  #socialmedia-container-big-screen,
+  #nara-hero-footer {
     display: none;
   }
   #mockup-full-flex img {
@@ -618,6 +674,10 @@ h3,
   }
   #personal-branding-illustration-img {
     height: 45vw;
+  }
+  .nara-body .asset-heading,
+  .nara-body .color-swatch-group p {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -631,9 +691,21 @@ h3,
   #animated-logo-video {
     height: 180px;
   }
+  #nara-promotional-reel {
+    height: 500px;
+  }
+  #nara-brand-concept-sec-visual,
+  #nara-recipe-card-img {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
   #poppins-font-background p,
   #roca-font-background p {
     font-size: 0.8rem;
+  }
+  .nara-body .asset-heading,
+  .nara-body .color-swatch-group p {
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -658,6 +730,24 @@ h3,
   }
   #animated-logo-video {
     height: 160px;
+  }
+  .nara-body p {
+    font-size: 0.8rem;
+    margin-top: 0; /*needed for colour swatch value paragraphs*/
+  }
+  .nara-body h3 {
+    font-size: 1rem;
+  }
+  .nara-body h1 {
+    font-size: 1.9rem;
+  }
+  #nara-promotional-reel {
+    height: 450px;
+  }
+  #nara-brand-concept-sec-visual,
+  #nara-recipe-card-img {
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 }
 

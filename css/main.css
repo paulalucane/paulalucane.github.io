@@ -600,7 +600,6 @@ h3,
   font-weight: 400; /*700 for bold*/
   font-style: normal; /*or italic*/
   font-size: 0.9rem;
-  color: var(--smokey-brown);
   margin-top: 0.2rem; /*needed for colour swatch value paragraphs*/
 }
 .nara-body h3 {
@@ -608,27 +607,25 @@ h3,
   font-weight: 400;
   font-style: normal;
   font-size: 1.1rem;
-  color: var(--smokey-brown);
 }
 .nara-body h1 {
   font-family: "Titan One", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  color: var(--smokey-brown);
 }
 
 .nara-body .nara-colour-swatch-name {
   font-weight: 700;
 }
 
-.nara-body .asset-heading {
-  font-size: 0.7rem;
+.nara-body .asset-heading,
+.nara-body .color-swatch-group p {
+  font-size: 0.75rem;
 }
 
-.vertical-line {
+.nara-vertical-line {
   border-left: 0.7px solid black;
-  height: 300px;
 }
 
 #nara-brand-concept-sec-visual {
@@ -678,6 +675,10 @@ h3,
   #personal-branding-illustration-img {
     height: 45vw;
   }
+  .nara-body .asset-heading,
+  .nara-body .color-swatch-group p {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 768px) {
   /*under 768px*/
@@ -700,6 +701,10 @@ h3,
   #poppins-font-background p,
   #roca-font-background p {
     font-size: 0.8rem;
+  }
+  .nara-body .asset-heading,
+  .nara-body .color-swatch-group p {
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -724,6 +729,16 @@ h3,
   }
   #animated-logo-video {
     height: 160px;
+  }
+  .nara-body p {
+    font-size: 0.8rem;
+    margin-top: 0; /*needed for colour swatch value paragraphs*/
+  }
+  .nara-body h3 {
+    font-size: 1rem;
+  }
+  .nara-body h1 {
+    font-size: 1.9rem;
   }
   #nara-promotional-reel {
     height: 450px;

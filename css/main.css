@@ -385,7 +385,7 @@ h3,
 }
 /*INDIVIDUAL*/
 /**/
-/*coffeetable book and title layout*/
+/*coffeetable book and title layout, and pink tax*/
 .coffebook-layout1,
 .title-layout1 {
   padding-left: 30vw;
@@ -403,6 +403,18 @@ h3,
 .ai-cover-img {
   max-width: 50%;
   padding-top: 10px;
+}
+#pinkt-tax-front-cover {
+  display: flex;
+  max-width: 50%;
+  padding-right: 10vw;
+  margin-left: auto;
+}
+#pinkt-tax-back-cover {
+  display: flex;
+  max-width: 50%;
+  padding-left: 10vw;
+  margin-right: auto;
 }
 
 /* culture days */

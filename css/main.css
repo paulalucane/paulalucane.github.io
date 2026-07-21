@@ -400,17 +400,15 @@ h3,
 .cmbyn-sticker-sheet {
   padding-left: 20vw;
 }
-.ai-cover-img {
-  max-width: 50%;
-  padding-top: 10px;
-}
-#pinkt-tax-front-cover {
+#ai-front-cover,
+#pink-tax-front-cover {
   display: flex;
   max-width: 50%;
   padding-right: 10vw;
   margin-left: auto;
 }
-#pinkt-tax-back-cover {
+#ai-back-cover,
+#pink-tax-back-cover {
   display: flex;
   max-width: 50%;
   padding-left: 10vw;

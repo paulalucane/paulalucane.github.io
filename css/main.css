@@ -184,13 +184,11 @@ footer {
   gap: 5px;
 }
 .aboutpage-link-group a,
-.proj-indepth-desc-section a,
 .paragraph-style-link,
 .webdev-a {
   color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
-.proj-indepth-desc-section a:hover,
 .paragraph-style-link:hover,
 .webdev-a:hover {
   color: var(--burnt-abmer);
@@ -348,7 +346,6 @@ h3,
   padding-right: 25vw;
 }
 .proj-desc,
-.proj-indepth-desc-section a,
 .paragraph-style-link {
   font-weight: 300;
   font-size: 0.95rem;

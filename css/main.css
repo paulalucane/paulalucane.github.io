@@ -184,13 +184,11 @@ footer {
   gap: 5px;
 }
 .aboutpage-link-group a,
-.proj-indepth-desc-section a,
 .paragraph-style-link,
 .webdev-a {
   color: var(--marigold);
 }
 .aboutpage-link-group a:hover,
-.proj-indepth-desc-section a:hover,
 .paragraph-style-link:hover,
 .webdev-a:hover {
   color: var(--burnt-abmer);
@@ -348,7 +346,6 @@ h3,
   padding-right: 25vw;
 }
 .proj-desc,
-.proj-indepth-desc-section a,
 .paragraph-style-link {
   font-weight: 300;
   font-size: 0.95rem;
@@ -400,17 +397,15 @@ h3,
 .cmbyn-sticker-sheet {
   padding-left: 20vw;
 }
-.ai-cover-img {
-  max-width: 50%;
-  padding-top: 10px;
-}
-#pinkt-tax-front-cover {
+#ai-front-cover,
+#pink-tax-front-cover {
   display: flex;
   max-width: 50%;
   padding-right: 10vw;
   margin-left: auto;
 }
-#pinkt-tax-back-cover {
+#ai-back-cover,
+#pink-tax-back-cover {
   display: flex;
   max-width: 50%;
   padding-left: 10vw;
@@ -660,6 +655,10 @@ h3,
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .img-padding-20vw {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
   #imagery-container-small-screen,
   #socialmedia-container-small-screen {
     display: grid;
@@ -700,8 +699,21 @@ h3,
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  .img-padding-20vw {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
   #animated-logo-video {
     height: 180px;
+  }
+  #proj-logo-paulalucane {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #proj-logo-loveandcr {
+    padding: 0;
   }
   #nara-promotional-reel {
     height: 500px;

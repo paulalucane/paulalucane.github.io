@@ -701,6 +701,15 @@ h3,
   #animated-logo-video {
     height: 180px;
   }
+  #proj-logo-paulalucane {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #proj-logo-loveandcr {
+    padding: 0;
+  }
   #nara-promotional-reel {
     height: 500px;
   }

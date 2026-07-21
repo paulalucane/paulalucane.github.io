@@ -655,6 +655,10 @@ h3,
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .img-padding-20vw {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
   #imagery-container-small-screen,
   #socialmedia-container-small-screen {
     display: grid;
@@ -694,6 +698,10 @@ h3,
     padding-right: 0;
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .img-padding-20vw {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #animated-logo-video {
     height: 180px;

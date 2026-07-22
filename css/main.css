@@ -734,6 +734,10 @@ h3,
 }
 @media screen and (max-width: 576px) {
   /*under 600px*/
+  .top-proj-desc-group {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .color-swatch {
     width: 12vw;
     height: 12vw;
